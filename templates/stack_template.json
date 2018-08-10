@@ -429,7 +429,7 @@
         }
       },
       "Properties": {
-        "ImageId": "ami-47af34aa",
+        "ImageId": "ami-4af5022c",
         "InstanceType": {
           "Ref": "InstanceType"
         },
