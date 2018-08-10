@@ -1,0 +1,8 @@
+#-------------------------------------------------------------------------------------------------
+# About create-key-pair commands
+# http://docs.aws.amazon.com/cli/latest/reference/ec2/create-key-pair.html
+#-------------------------------------------------------------------------------------------------
+
+aws ec2 create-key-pair --key-name ProductSquareKey \
+                        --query 'KeyMaterial' \
+                        --output text > ~/.ProductSquareKey.pem
