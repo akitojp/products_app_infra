@@ -1,0 +1,14 @@
+#-------------------------------------------------------------------------------------------------
+# About create-stack command
+# http://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html
+#-------------------------------------------------------------------------------------------------
+
+aws cloudformation create-stack --stack-name ProductSquare \
+                                --template-body https://raw.githubusercontent.com/akitojp/products_app_infra/master/templates/stack_template.json \
+                                --tags Key=Name,Value=ProductSquare \
+                                --parameters ParameterKey=DBName,ParameterValue=ProductSquare \
+                                             ParameterKey=DBPassword,ParameterValue=[PASSWORD] \
+                                             ParameterKey=DBRootPassword,ParameterValue=[PASSWORD] \
+                                             ParameterKey=DBUser,ParameterValue=[User] \
+                                             ParameterKey=InstanceType,ParameterValue=t2.micro \
+                                             ParameterKey=KeyName,ParameterValue=ProductSquareKey
