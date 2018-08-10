@@ -429,7 +429,7 @@
         }
       },
       "Properties": {
-        "ImageId": "ami-4af5022c",
+        "ImageId": "ami-47af34aa",
         "InstanceType": {
           "Ref": "InstanceType"
         },
@@ -474,24 +474,24 @@
         }
       }
     },
-//    "DBSecurityGroup": {
-//      "Type": "AWS::RDS::DBSecurityGroup",
-//      "Properties": {
-//        "DBSecurityGroupIngress": [{
-//          "EC2SecurityGroupName": {
-//            "Ref": "WebServerSecurityGroup"
-//          }
-//        },{
-//          "CIDRIP": "0.0.0.0/0"
-//        }],
-//        "GroupDescription": "Frontend Access"
-//      },
-//      "Metadata": {
-//        "AWS::CloudFormation::Designer": {
-//          "id": "13d60e91-61b0-4906-a9b4-5ccec91b393d"
-//        }
-//      }
-//    },
+    "DBSecurityGroup": {
+      "Type": "AWS::RDS::DBSecurityGroup",
+      "Properties": {
+        "DBSecurityGroupIngress": [{
+          "EC2SecurityGroupName": {
+            "Ref": "WebServerSecurityGroup"
+          }
+        },{
+          "CIDRIP": "0.0.0.0/0"
+        }],
+        "GroupDescription": "Frontend Access"
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "13d60e91-61b0-4906-a9b4-5ccec91b393d"
+        }
+      }
+    },
     "WebServerSecurityGroup": {
       "Type": "AWS::EC2::SecurityGroup",
       "Properties": {
