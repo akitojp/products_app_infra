@@ -70,7 +70,7 @@
     },
     "DBRootPassword": {
       "ConstraintDescription": "must contain only alphanumeric characters.",
-      "Description": "Root password for MySQL",
+      "Description": "Root password for PostgreSQL",
       "MinLength": "1",
       "AllowedPattern": "[a-zA-Z0-9]*",
       "NoEcho": "true",
@@ -79,7 +79,7 @@
     },
     "DBPassword": {
       "ConstraintDescription": "must contain only alphanumeric characters.",
-      "Description": "Password MySQL database access",
+      "Description": "Password PostgreSQL database access",
       "MinLength": "1",
       "AllowedPattern": "[a-zA-Z0-9]*",
       "NoEcho": "true",
@@ -88,7 +88,7 @@
     },
     "DBUser": {
       "ConstraintDescription": "must begin with a letter and contain only alphanumeric characters.",
-      "Description": "Username for MySQL database access",
+      "Description": "Username for PostgreSQL database access",
       "MinLength": "1",
       "AllowedPattern": "[a-zA-Z][a-zA-Z0-9]*",
       "NoEcho": "true",
@@ -97,7 +97,7 @@
     },
     "DBName": {
       "ConstraintDescription": "must begin with a letter and contain only alphanumeric characters.",
-      "Description": "MySQL database name",
+      "Description": "PostgreSQL database name",
       "Default": "MyDatabase",
       "MinLength": "1",
       "AllowedPattern": "[a-zA-Z][a-zA-Z0-9]*",
@@ -449,7 +449,7 @@
         "DBName": {
           "Ref": "DBName"
         },
-        "Engine": "MySQL",
+        "Engine": "postgres",
         "MasterUsername": {
           "Ref": "DBUser"
         },
