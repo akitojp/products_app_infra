@@ -5,4 +5,4 @@
 
 aws ec2 create-key-pair --key-name ProductSquareKey \
                         --query 'KeyMaterial' \
-                        --output text > ~/.ProductSquareKey.pem
+                        --output text > ~/.ssh/ProductSquareKey.pem
