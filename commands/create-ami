@@ -1,0 +1,3 @@
+aws ec2 create-image --instance-id 【Instance ID】 \
+                     --name ProductSquareAMI \
+                     --reboot

@@ -342,7 +342,7 @@ Resources:
       'AWS::CloudFormation::Designer':
         id: 13211d2c-629c-4bb0-8bd7-7beb8d159db0
     Properties:
-      ImageId: ami-e99f4896
+      ImageId: ami-03cc73273e0810b6a
       InstanceType: !Ref InstanceType
       SecurityGroups:
         - !Ref WebServerSecurityGroup
