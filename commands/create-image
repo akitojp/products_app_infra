@@ -1,8 +1,3 @@
-#-------------------------------------------------------------------------------------------------
-# create-image
-# http://docs.aws.amazon.com/cli/latest/reference/ec2/create-image.html
-#-------------------------------------------------------------------------------------------------
-
 aws ec2 create-image --instance-id [EC2インスタンスID] \
-                     --name RailsSampleAppAMI \
+                     --name ProductSquareAMI \
                      --reboot

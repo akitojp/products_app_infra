@@ -1,0 +1,13 @@
+#-------------------------------------------------------------------------------------------------
+# update-stack
+# http://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-stack.html
+#-------------------------------------------------------------------------------------------------
+
+aws cloudformation update-stack --stack-name ProductSquare \
+                                --template-body file://./templates/stack_template.yml \
+                                --parameters ParameterKey=DBName,UsePreviousValue=true \
+                                             ParameterKey=KeyName,UsePreviousValue=true \
+                                             ParameterKey=DBPassword,UsePreviousValue=true \
+                                             ParameterKey=DBRootPassword,UsePreviousValue=true \
+                                             ParameterKey=DBUser,UsePreviousValue=true \
+                                             ParameterKey=InstanceType,ParameterValue=t2.micro
